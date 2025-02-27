@@ -51,7 +51,7 @@ export default function About() {
             Sobre Mí
           </motion.h2>
           <motion.p className="text-lg text-neutral-700 mb-4" variants={itemVariants}>
-            Con más de 5 años de experiencia en la industria de la moda, he trabajado con marcas reconocidas y
+            Con más de 5 años de experiencia en la industria de la moda y la actuación, he trabajado con marcas reconocidas y
             fotógrafos de renombre internacional.
           </motion.p>
           <motion.p className="text-lg text-neutral-700 mb-4" variants={itemVariants}>
@@ -79,7 +79,7 @@ export default function About() {
         <motion.div className="order-1 lg:order-2" variants={imageVariants}>
           <div className="bg-rose-100 rounded-lg p-4">
             <Image
-              src="/placeholder.svg?height=700&width=500"
+              src="/media/DSC_3159.JPG?height=700&width=500"
               width={500}
               height={700}
               alt="Sobre mí"

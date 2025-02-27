@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
-import { useRef } from "react"
+import { useRef, FormEvent, useState } from "react"
 
 export default function Contact() {
   const ref = useRef(null)
@@ -40,70 +40,19 @@ export default function Contact() {
           Contacto
         </motion.h2>
         <motion.p className="text-center text-lg text-neutral-700 mb-8" variants={itemVariants}>
-          ¿Interesado en trabajar conmigo? Completa el formulario y me pondré en contacto contigo a la brevedad.
+          ¿Interesado en trabajar conmigo? Enviame un correo y me pondré en contacto contigo lo antes posible.
         </motion.p>
-        <motion.form className="space-y-6" variants={containerVariants}>
-          <motion.div className="grid grid-cols-1 md:grid-cols-2 gap-6" variants={itemVariants}>
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium mb-2">
-                Nombre
-              </label>
-              <motion.input
-                whileFocus={{ scale: 1.01 }}
-                type="text"
-                id="name"
-                className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
-                placeholder="Tu nombre"
-              />
-            </div>
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium mb-2">
-                Email
-              </label>
-              <motion.input
-                whileFocus={{ scale: 1.01 }}
-                type="email"
-                id="email"
-                className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
-                placeholder="tu@email.com"
-              />
-            </div>
-          </motion.div>
-          <motion.div variants={itemVariants}>
-            <label htmlFor="subject" className="block text-sm font-medium mb-2">
-              Asunto
-            </label>
-            <motion.input
-              whileFocus={{ scale: 1.01 }}
-              type="text"
-              id="subject"
-              className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
-              placeholder="Asunto del mensaje"
-            />
-          </motion.div>
-          <motion.div variants={itemVariants}>
-            <label htmlFor="message" className="block text-sm font-medium mb-2">
-              Mensaje
-            </label>
-            <motion.textarea
-              whileFocus={{ scale: 1.01 }}
-              id="message"
-              rows={5}
-              className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
-              placeholder="Tu mensaje"
-            ></motion.textarea>
-          </motion.div>
-          <motion.div variants={itemVariants}>
-            <motion.button
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.98 }}
-              type="submit"
-              className="w-full px-6 py-3 bg-black text-white rounded-full hover:bg-neutral-800 transition-colors"
-            >
-              Enviar Mensaje
-            </motion.button>
-          </motion.div>
-        </motion.form>
+
+        <motion.div className="flex">
+          <motion.a
+            href="mailto:melabermudezz18@gmail.com"
+            className="mx-auto px-6 py-3 border border-black rounded-full hover:bg-neutral-100 transition-colors"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.98 }}
+          >
+            Contactar
+          </motion.a>
+        </motion.div>
       </motion.div>
     </section>
   )

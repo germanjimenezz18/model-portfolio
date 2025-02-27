@@ -10,10 +10,10 @@ export default function Portfolio() {
   const isInView = useInView(ref, { once: true, amount: 0.2 })
 
   const portfolioItems = [
-    { id: 1, category: "Editorial", title: "Vogue Italia", image: "/placeholder.svg?height=600&width=400" },
-    { id: 2, category: "Campaña", title: "Primavera 2023", image: "/placeholder.svg?height=600&width=400" },
-    { id: 3, category: "Pasarela", title: "Fashion Week", image: "/placeholder.svg?height=600&width=400" },
-    { id: 4, category: "Comercial", title: "Marca de Lujo", image: "/placeholder.svg?height=600&width=400" },
+    { id: 1, category: "Editorial", title: "Vogue Italia", image: "/media/DSC_2616.JPG?height=600&width=400" },
+    { id: 2, category: "Campaña", title: "Primavera 2023", image: "/media/DSC_2930.JPG?height=600&width=400" },
+    { id: 3, category: "Pasarela", title: "Fashion Week", image: "/media/DSC_2351.JPG?height=600&width=400" },
+    { id: 4, category: "Comercial", title: "Marca de Lujo", image: "/media/DSC_3645.JPG?height=600&width=400" },
   ]
 
   const containerVariants = {

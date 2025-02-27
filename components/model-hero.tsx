@@ -59,17 +59,17 @@ export default function ModelHero() {
       >
         <div className="relative z-10">
           <div className="relative">
-            <motion.h2 className="text-7xl md:text-8xl lg:text-9xl font-serif tracking-tighter" variants={itemVariants}>
+            <motion.h2 className="text-6xl md:text-8xl lg:text-9xl font-serif tracking-tighter" variants={itemVariants}>
               MODELO
             </motion.h2>
             <motion.h2
-              className="text-7xl md:text-8xl lg:text-9xl font-serif tracking-tighter mt-4"
+              className="text-6xl md:text-8xl lg:text-9xl font-serif tracking-tighter mt-4"
               variants={itemVariants}
             >
-              PROFESIONAL
+              ACTRIZ
             </motion.h2>
-            <motion.div className="absolute top-0 right-24 -translate-y-1/2 hidden md:block" variants={nameVariants}>
-              <span className="font-script text-5xl md:text-6xl lg:text-7xl text-amber-600">Soy Ana</span>
+            <motion.div className="absolute top-[-2rem] right-24 -translate-y-1/2 hidden md:block" variants={nameVariants}>
+              <span className="font-script text-5xl md:text-6xl lg:text-7xl text-amber-600">Soy Melanie</span>
             </motion.div>
           </div>
           <motion.p className="mt-8 text-lg text-neutral-700 max-w-md" variants={itemVariants}>
@@ -85,7 +85,7 @@ export default function ModelHero() {
               Ver Portfolio
             </motion.a>
             <motion.a
-              href="#contact"
+              href="mailto:melabermudezz18@gmail.com"
               className="px-6 py-3 border border-black rounded-full hover:bg-neutral-100 transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
@@ -97,7 +97,7 @@ export default function ModelHero() {
         <motion.div className="relative" variants={imageVariants}>
           <div className="bg-rose-200 aspect-[3/4] rounded-lg overflow-hidden">
             <Image
-              src="/placeholder.svg?height=800&width=600"
+              src="/media/DSC_2839.JPG?height=800&width=600"
               width={600}
               height={800}
               alt="Modelo profesional"

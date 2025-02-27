@@ -14,7 +14,7 @@ export default function Home() {
         <button className="lg:hidden">
           <Menu className="h-6 w-6" />
         </button>
-        <h1 className="text-2xl font-medium">Portfolio</h1>
+        <h1 className="text-2xl font-medium font-serif tracking-tighter hover:underline">Melanie Bermudez</h1>
         <nav className="hidden lg:flex space-x-8">
           <Link href="#portfolio" className="text-neutral-800 hover:text-neutral-600 transition-colors">
             Portfolio
@@ -26,7 +26,6 @@ export default function Home() {
             Contacto
           </Link>
         </nav>
-        
       </header>
 
       <ModelHero />

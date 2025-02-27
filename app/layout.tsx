@@ -7,10 +7,10 @@ import ScrollIndicator from "@/components/scroll-indicator"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Portfolio de Modelo Profesional",
+  title: "Melanie Bermudez - Portfolio profesional",
   description:
-    "Portfolio profesional para modelo con experiencia en pasarela, fotografía editorial y campañas publicitarias",
-    generator: 'v0.dev'
+    "Portfolio profesional de Melanie Bermudez, actriz valenciana.",
+    generator: 'Melanie Bermudez',
 }
 
 export default function RootLayout({
